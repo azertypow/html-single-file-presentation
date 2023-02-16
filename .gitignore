@@ -1,0 +1,13 @@
+#jetbrain
+.idea
+
+#nodeJS
+node_modules
+
+#parcel
+/.devDire
+/.parcel-cache
+
+#project
+/outDire
+/origin

@@ -1,0 +1,16 @@
+{
+  "name": "talou.html-single-file-presenataion",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel src/index.html --dist-dir .devDire/",
+    "build": "parcel build --dist-dir outDire/ src/index.html"
+  },
+  "author": "azertypow",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "@parcel/optimizer-data-url": "^2.8.3",
+    "@parcel/transformer-inline-string": "^2.8.3"
+  }
+}

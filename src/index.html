@@ -1,0 +1,167 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+  <title>Selected Work - Romain Talou</title>
+  <meta charset="UTF-8" >
+
+  <style>
+    @font-face {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      src: url("data-url:./Montserrat/Montserrat-Medium.ttf");
+    }
+
+    @font-face {
+      font-family: 'Montserrat';
+      font-weight: 600;
+      src: url("data-url:./Montserrat/Montserrat-SemiBold.ttf");
+    }
+
+    html, body {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      top: 0;
+      left: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 5vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    #container {
+      scroll-snap-type: y mandatory;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+      position: relative;
+      box-sizing: border-box;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+    }
+
+    #container::-webkit-scrollbar {
+      display: none;
+    }
+
+    #container > [class*='child'] {
+      width: 100%;
+      height: 100%;
+      scroll-snap-align: start;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    #container > .child {
+      padding: 7.5vh;
+      box-sizing: border-box;
+    }
+
+    #container > .child-cover {
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #container > .child-small-video {
+      padding: 15vh;
+      box-sizing: border-box;
+    }
+
+    #container > .child > * {
+      box-sizing: border-box;
+      object-fit: contain;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    #container > .child-cover > * {
+      box-sizing: border-box;
+      object-fit: cover;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    #container > .child-small-video > * {
+      box-sizing: border-box;
+      object-fit: contain;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .child-contact {
+      font-size: 5rem;
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15vh;
+      background-color: white !important;
+    }
+
+    .light {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div class="child">
+      <video autoplay muted loop src="data-url:./media/1.mp4">The “video” tag is not supported by your browser.</video>
+    </div>
+
+    <div class="child-cover">
+      <img src="data-url:./media/2.jpg" alt="image 2" >
+    </div>
+
+    <div class="child-small-video">
+
+      <video autoplay muted loop src="data-url:./media/3.mp4">The “video” tag is not supported by your browser.</video>
+    </div>
+
+    <div class="child light">
+      <img src="data-url:./media/4.jpg" alt="image 4">
+    </div>
+
+    <div class="child">
+      <video autoplay muted loop src="data-url:./media/5.mp4" >The “video” tag is not supported by your browser.</video>
+    </div>
+
+    <div class="child-cover">
+      <img src="data-url:./media/6.jpg" alt="image 6">
+    </div>
+
+    <div class="child-cover">
+      <img src="data-url:./media/7.jpg" alt="image 7">
+    </div>
+
+    <div class="child-contact">
+      <p>
+        <span style="font-weight: 600" >Romain Talou</span>
+        <br><a href="mailto:info@talou.io" target="_blank">info@Talou.io</a>
+        <br><a href="https://www.talou.io" >www.talou.io</a>
+      </p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
